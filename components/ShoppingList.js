@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, StyleSheet } from "react-native";
+import { FlatList } from "react-native";
 import Row from "./Row";
 
 export default function ShoppingList({ items, remove, itemBought, setSelectedId }) {
@@ -18,9 +18,3 @@ export default function ShoppingList({ items, remove, itemBought, setSelectedId 
     />
   );
 }
-
-const styles = StyleSheet.create({
-  list: {
-    marginTop: 20,
-  },
-});

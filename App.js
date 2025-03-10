@@ -35,6 +35,7 @@ export default function App() {
     };
   }, []);
 
+  /* New item function */
   const save = async () => {
     if (newItem.trim() === "") return;
     try {
@@ -50,6 +51,7 @@ export default function App() {
     }
   };
 
+  /* Delete item function */
   const remove = async (id) => {
     try {
       await deleteDoc(doc(firestore, SHOPPINGLIST, id));
@@ -59,6 +61,7 @@ export default function App() {
     }
   };
 
+  /* Set item bought function */
   const itemBought = useCallback(async (id) => {
     const itemRef = doc(firestore, SHOPPINGLIST, id);
     const currentItem = items.find((item) => item.id === id);

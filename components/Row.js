@@ -42,14 +42,3 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
 });
-
-{
-  /* <Pressable
-      onPress={() => {
-        select(item.id);
-        itemBought(item.id);
-      }}
-    >
-      <Text style={[styles.itemText, { textDecorationLine }]}>{item.text}</Text>
-    </Pressable> */
-}
